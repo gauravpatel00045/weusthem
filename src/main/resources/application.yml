@@ -1,0 +1,16 @@
+spring:
+  main:
+    allow-circular-references: true
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    properties:
+      hibernate.format_sql: true
+  datasource:
+    password: qdev@123
+    url: jdbc:postgresql://localhost:5432/addressbook
+    username: postgres
